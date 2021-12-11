@@ -1,3 +1,23 @@
 {
-  "extends": "next/core-web-vitals"
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "airbnb",
+    "eslint-config-airbnb-typescript-prettier"
+  ],
+  "plugins": [
+    "@next/eslint-plugin-next"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "radix": "off",
+    "no-template-curly-in-string": "off",
+    "no-unused-vars": "error",
+    "react/jsx-props-no-spreading": "off"
+  }
 }
